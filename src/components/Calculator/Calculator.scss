@@ -1,25 +1,24 @@
 .calculator {
   width: 100%;
   height: auto;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
-  &__pad {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    width: 450px;
-    margin: 35px auto;
-    button {
-      width: 100%;
-      height: 80px;
-      border-radius: 20px;
-      font-size: 2rem;
-      outline: none !important;
-    }
+  max-width: 600px;
+  margin: 0 auto;
+  button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: #5dc8e5 0 0 20px;
+    border: 1px solid #1a1a1a;
+    background-color: #060606;
+    outline: none !important;
+  }
+  button:hover {
+    background-color: #222120;
   }
 }
 
 .zero {
-  grid-column: 1 / 3;
+  width: 50%;
 }

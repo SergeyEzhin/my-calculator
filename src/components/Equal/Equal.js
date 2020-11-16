@@ -5,11 +5,7 @@ import { useContext } from "react";
 export const Equal = () => {
   const store = useContext(StoreContext);
   return (
-    <button
-      type="button"
-      className="btn btn-light"
-      onClick={() => store.doMath()}
-    >
+    <button type="button" onClick={() => store.doMath()}>
       =
     </button>
   );

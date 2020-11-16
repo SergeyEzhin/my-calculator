@@ -17,27 +17,73 @@ const Calculator = () => {
     <div className="calculator">
       <Display />
       <div className="calculator__pad">
-        <Clear />
-        <Back />
-        <ToggleNegation />
-        <Operator operator="/" />
-        <Number number={7} />
-        <Number number={8} />
-        <Number number={9} />
-        <Operator operator="*" />
-        <Number number={4} />
-        <Number number={5} />
-        <Number number={6} />
-        <Operator operator="-" />
-        <Number number={1} />
-        <Number number={2} />
-        <Number number={3} />
-        <Operator operator="+" />
-        <div className="zero">
-          <Number number={0} />
+        <div className="row">
+          <div className="row__column">
+            <Clear />
+          </div>
+          <div className="row__column">
+            <Back />
+          </div>
+          <div className="row__column">
+            <ToggleNegation />
+          </div>
+          <div className="row__column">
+            <Operator operator="/" />
+          </div>
         </div>
-        <Number number="." />
-        <Equal />
+        <div className="row">
+          <div className="row__column">
+            <Number number={7} />
+          </div>
+          <div className="row__column">
+            <Number number={8} />
+          </div>
+          <div className="row__column">
+            <Number number={9} />
+          </div>
+          <div className="row__column">
+            <Operator operator="*" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="row__column">
+            <Number number={4} />
+          </div>
+          <div className="row__column">
+            <Number number={5} />
+          </div>
+          <div className="row__column">
+            <Number number={6} />
+          </div>
+          <div className="row__column">
+            <Operator operator="-" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="row__column">
+            <Number number={1} />
+          </div>
+          <div className="row__column">
+            <Number number={2} />
+          </div>
+          <div className="row__column">
+            <Number number={3} />
+          </div>
+          <div className="row__column">
+            <Operator operator="+" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="zero">
+            <Number number={0} />
+          </div>
+          <div className="row__column">
+            <Number number="." />
+          </div>
+          <div className="row__column">
+            <Equal />
+          </div>
+        </div>
       </div>
     </div>
   ));
